@@ -28,6 +28,14 @@ dependencies {
 	implementation 'org.apache.poi:poi:3.17'
 	implementation 'org.apache.poi:poi-ooxml:3.17'
 	testImplementation 'org.mockito:mockito-core:3.9.0'
+//	implementation 'io.ipfs:java-ipfs-api:1.2.2'
+	//implementation 'io.ipfs:java-ipfs-http-client:1.4.0' // Check for the latest version
+// https://mvnrepository.com/artifact/com.github.ipfs/java-ipfs-http-client
+implementation group: 'com.github.ipfs', name: 'java-ipfs-http-client', version: 'v1.4.4'
+
+	//implementation 'com.ipfs.ipld:ipld-http-client:0.22.0' // Replace with latest stable version if needed
+	
+
 }
 
 tasks.named('test') {
